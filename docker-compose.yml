@@ -12,4 +12,4 @@ web:
   links:
     - mysql
   volumes:
-    - './www:/var/www/html'
+    - './www/:/var/www/html/'
