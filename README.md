@@ -31,3 +31,8 @@ https://hub.docker.com/r/trafex/alpine-nginx-php7/
 
 
 https://github.com/etopian/alpine-php-wordpress
+
+License
+-------
+
+MIT
