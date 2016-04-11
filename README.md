@@ -8,9 +8,12 @@ Docker Compose friendly. Expects files mounted to /var/www/html to serve website
 
 Usage
 -----
-Start the Docker containers:
+In docker-compose.yml:
 
-    sudo docker run -p 80:80 trafex/alpine-nginx-php7
+    web:
+      image: grokbot/alpine-php-nginx:latest
+      volumes:
+        - '/path/to/your/webfiles:/var/www/html'
 
 Resources & inspiration
 -----------------------
