@@ -6,7 +6,7 @@ mysql:
     - MYSQL_ROOT_PASSWORD=mylongrootpassword
     - MYSQL_USER=myuser
 web:
-  build: .
+  image: grokbot/alpine-php-nginx:latest
   ports:
     - '8080:80'
   links:
