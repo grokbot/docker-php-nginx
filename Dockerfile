@@ -22,12 +22,14 @@ COPY config/php.ini /etc/php7/conf.d/zzz_custom.ini
 COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Make web directory
-RUN mkdir -p /var/www/html
-RUN chown nginx:www-data /var/www/html
+RUN mkdir -p /srv/www/web
+RUN chown nginx:www-data /srv/www/web
 
 # Temp files directory
 RUN mkdir -p /tmp/nginx
 RUN chown nginx:www-data /tmp/nginx
+RUN mkdir -p /var/cache/nginx2
+RUN chown nginx:www-data /var/cache/nginx2
 
 RUN usermod -u 1000 nginx
 
